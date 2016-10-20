@@ -1,5 +1,65 @@
-extends layout
 
-block content
-  h1= title
-  p Welcome to #{title}
+    <script src="js/index.js"></script>
+    <script src = "js/nav.js"></script>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <div class="row center">
+                <div class="col s12">
+                    <br>
+                    <br>
+                    <div class="row center" id="logo">
+                        <h2>Welcome to The DUMP TRUMP Blog!</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+              {{#if error}}
+                <script>Materialize.toast('Bad email or password', 3000)</script>
+              {{/if}}
+              {{#if email}}
+                <script>Materialize.toast('Email field is blank', 3000)</script>
+              {{/if}}
+              {{#if pswd}}
+                <script>Materialize.toast('Password field is blank', 3000)</script>
+              {{/if}}
+              {{#if logged}}
+                <script>Materialize.toast("You're already a user. Please log in!", 3000)</script>
+              {{/if}}
+                <div class="row">
+                  <div class="valign-wrapper">
+                    <form method="POST" id="loginForm" class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" name="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="password" type="password" name="password" class="validate">
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+                        <div class="row center">
+                            <div class="col s12">
+                              <button class="btn waves-effect light-blue waves-light" type="submit" name="signup">Sign Up!</button>
+                              <button class="btn waves-effect red waves-light" type="submit" name="login">Log In</button>
+                              <fb:login-button class="fb-btn" scope="public_profile,email" onlogin="checkLoginState();">
+                              </fb:login-button>
+                            </div>
+                        </div>
+                    </form>
+                  </div>
+                </div>
+            </div>
+            <div class="container">
+                <div id="summary" class="row center white-text">
+                    <h5>Come vent and share your concerns about the most controversial Presidential Candidate in History !</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>

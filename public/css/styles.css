@@ -1,0 +1,101 @@
+        .icon-block {
+          padding: 0 15px;
+        }
+
+        .icon-block .material-icons {
+          font-size: inherit;
+          color: #666666;
+        }
+
+        body {
+          background-color: black;
+          background-size: cover;
+          background-image: url("../images/flag.jpg");
+          background-position: top center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          height: 100%;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        main {
+          flex: 1 0 auto;
+        }
+
+        #download-button {
+          background-color: #3b5998;
+        }
+
+        #logo {
+          color: black;
+          font-family: 'Oswald', sans-serif;
+          font-weight: heavy;
+          text-shadow: 2px 2px white;
+        }
+        /*.redirect-button {
+        background-color: white;
+        color: red;
+        font-size: 30px;
+        top-padding: 40px;
+      }
+      /*cheats pages*/
+        /*.card .card-content .card-title {
+          line-height: 25px !important;
+        }
+
+        .card-title {
+          font-weight: 600 !important;
+        }
+
+        .card .card-content p {
+          font-weight: 600 !important;
+          font-size: 20px;
+          line-height: 2px !important;
+        }
+
+        .card .card-content .card-establishment {
+          font-weight: 400 !important;
+        }
+
+        .grey.lighten-4 {
+          opacity: .95;
+        }
+
+        .collapsible-header {
+          font-family: 'Oswald', sans-serif;
+          font-size: 26px;
+        }
+
+        .card-action {
+          font-weight: heavy;
+          font-size: 20px;
+        }
+
+        #summary {
+          color: black;
+        }
+
+        section.gradient button {
+          color: #fff;
+          text-shadow: -2px 2px #346392;
+          background-color: #e65100;
+          background-image: linear-gradient(top, #6496c8, #346392);
+          box-shadow: inset 0 0 0 1px #27496d;
+          border: none;
+          border-radius: 15px;
+        }
+
+        section.gradient button:hover, section.gradient button.hover {
+          box-shadow: inset 0 0 0 1px #27496d, 0 5px 15px #193047;
+        }
+
+        section.gradient button:active, section.gradient button.active {
+          box-shadow: inset 0 0 0 1px #27496d, inset 0 5px 30px #193047;
+        }*/
+
+        .digits {
+          font-style: italic;
+          font-size: 28px;
+        }
