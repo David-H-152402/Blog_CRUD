@@ -6,7 +6,6 @@ exports.up = function(knex) {
     table.string('email', 255)
       .notNullable()
       .unique();
-    table.text('token').unique();
     table.timestamps(true, true);
     table.string('linkedin_user', 255)
   });
