@@ -1,6 +1,4 @@
-<script src="js/posts.js">
-</script>
-<script src="js/nav.js"></script>
+
 <div class="section no-pad-bot" id="index-banner">
 
     <div class="container">
@@ -16,28 +14,7 @@
     <div class="row center">
         <h5 class="white-text"> - POSTS - </h5>
     </div>
-    <div class="container">
-        <div class="white-text hoverable blue darken-4">
-            <div class="row">
-                <div class="col m6 s12 right-align">
-                    <h5 class="left-align">Title: Trump is Rediculous ...</h5>
-                </div>
-                <div class="col m6 s12" class="view_btn">
-                    <a class="btn-floating btn-large waves-effect waves-light red right"><i class="material-icons">speaker_notes</i></a>
-                </div>
-                <hr>
-                <div class="col s12">
-                    <h6 class="right">10/20/16 1300</h6>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12">
-                    <p class="left-align">Leave it to Trump to blame and vilify other people for his actions/behaviors. He's a Man-child. Total lack of personal responsibility. in the past 3 decades, he's had 3,500 lawsuits and tax disputes in NY against his businesses etc.
-                        Even reports that he has refused to pay lawyers, real estate brokers, contractors etc. (USA Today), keep it real -- Where there's Smoke, there's Fire. </p>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div class="container">
         {{#each posts}}
             <div class="white-text hoverable blue darken-4">
@@ -46,7 +23,7 @@
                         <h5 class="left-align">{{this.title}}</h5>
                     </div>
                     <div class="col m6 s12" class="view_btn">
-                        <a class="btn-floating btn-large waves-effect waves-light red right"><i class="material-icons">speaker_notes</i></a>
+                        <a href="/posts/{{this.id}}" class="btn-floating btn-large waves-effect waves-light red right"><i class="material-icons">speaker_notes</i></a>
                     </div>
                     <hr>
                     <div class="col m6 s12">
@@ -58,7 +35,7 @@
                         <p class="left-align">{{this.body}}</p>
                     </div>
                 </div>
-        </div>
+            </div>
         {{/each}}
     </div>
 
